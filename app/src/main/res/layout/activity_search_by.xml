@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchByActivity"
+    android:orientation="vertical"
+    android:padding="0dp"
+    android:background="@color/Mybackground_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:layout_marginBottom="2dp"
+            android:textColor="@color/Mybackground_color"
+            android:fontFamily="sans-serif-black"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/total_contacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No fo record"
+            android:layout_marginTop="0dp"
+            android:textColor="@color/Mybackground_color"
+            android:fontFamily="sans-serif-black"
+            android:textSize="15dp"
+            android:layout_gravity="center"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/MyTextInputLayoutStyle_search"
+            android:theme="@style/MyTextInputLayoutStyle_search"
+            app:boxStrokeColor="#FFFBE6"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:textColorHint="#FFFBE6"
+            android:gravity="center">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/EditText_Search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@android:drawable/ic_menu_search"
+                android:textColor="@color/MyListViewBackground_color"
+                android:inputType="none"
+                android:editable="false"
+                tools:ignore="Deprecated" />
+
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+                style="@style/MyEditTextStyle"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:dividerHeight="1dp"
+        android:divider="@color/MyListViewDivider_color"
+        android:headerDividersEnabled="true"
+        tools:ignore="MissingConstraints"
+        android:paddingRight="2dp"
+        android:paddingLeft="2dp"
+        android:background="@color/MyListViewBackground_color"/>
+
+
+</LinearLayout>

@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Mybackground_color"
+    android:fillViewport="true"
+    tools:context="in.blogspot.ayazsofttech.muslim_teli_contact_book.Profile_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="User Profile"
+            android:fontFamily="sans-serif-black"
+            android:textSize="28dp"
+            android:padding="8dp"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/Mybackground_color"
+            android:background="@color/colorPrimary"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="15dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/MyTextInputLayoutStyle"
+                android:theme="@style/MyTextInputLayoutStyle"
+                android:layout_marginTop="5dp"
+                app:boxStrokeColor="@color/boxStrokeColor"
+                android:textColorHint="@color/boxStrokeColor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/TextView_Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Name ( नाम )"
+                    android:inputType="none"
+                    android:editable="false"
+                    tools:ignore="Deprecated" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/MyTextInputLayoutStyle"
+                android:theme="@style/MyTextInputLayoutStyle"
+                android:layout_marginTop="5dp"
+                app:boxStrokeColor="@color/boxStrokeColor"
+                android:textColorHint="@color/boxStrokeColor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/TextView_FatherName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Father Name ( पिता का नाम )"
+                    android:inputType="none"
+                    android:editable="false"
+                    tools:ignore="Deprecated" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/MyTextInputLayoutStyle"
+                android:theme="@style/MyTextInputLayoutStyle"
+                android:layout_marginTop="5dp"
+                app:boxStrokeColor="@color/boxStrokeColor"
+                android:textColorHint="@color/boxStrokeColor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/TextView_SurName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Surname ( उपनाम )"
+                    android:inputType="none"
+                    android:editable="false"
+                    tools:ignore="Deprecated" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/MyTextInputLayoutStyle"
+                android:theme="@style/MyTextInputLayoutStyle"
+                android:layout_marginTop="5dp"
+                app:boxStrokeColor="@color/boxStrokeColor"
+                android:textColorHint="@color/boxStrokeColor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/TextView_Category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Category ( श्रेणी )"
+                    android:inputType="none"
+                    android:editable="false"
+                    tools:ignore="Deprecated" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/MyTextInputLayoutStyle"
+                android:theme="@style/MyTextInputLayoutStyle"
+                android:layout_marginTop="5dp"
+                app:boxStrokeColor="@color/boxStrokeColor"
+                android:textColorHint="@color/boxStrokeColor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/TextView_State"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="State ( राज्य )"
+                    android:inputType="none"
+                    android:editable="false"
+                    tools:ignore="Deprecated" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/MyTextInputLayoutStyle"
+                android:theme="@style/MyTextInputLayoutStyle"
+                android:layout_marginTop="5dp"
+                app:boxStrokeColor="@color/boxStrokeColor"
+                android:textColorHint="@color/boxStrokeColor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/TextView_District"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="District ( जिला )"
+                    android:inputType="none"
+                    android:editable="false"
+                    tools:ignore="Deprecated" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/MyTextInputLayoutStyle"
+                android:theme="@style/MyTextInputLayoutStyle"
+                android:layout_marginTop="5dp"
+                app:boxStrokeColor="@color/boxStrokeColor"
+                android:textColorHint="@color/boxStrokeColor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/TextView_City"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="City ( शहर )"
+                    android:inputType="none"
+                    android:editable="false"
+                    tools:ignore="Deprecated" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/MyTextInputLayoutStyle"
+                android:theme="@style/MyTextInputLayoutStyle"
+                android:layout_marginTop="5dp"
+                app:boxStrokeColor="@color/boxStrokeColor"
+                android:textColorHint="@color/boxStrokeColor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/TextView_Mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Mobile No. ( मोबाइल )"
+                    android:inputType="none"
+                    android:editable="false"
+                    tools:ignore="Deprecated" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/MyTextInputLayoutStyle"
+                android:theme="@style/MyTextInputLayoutStyle"
+                android:layout_marginTop="5dp"
+                app:boxStrokeColor="@color/boxStrokeColor"
+                android:textColorHint="@color/boxStrokeColor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/TextView_HomeTown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Original Place मूल स्थान ( कहां वाले )"
+                    android:inputType="none"
+                    android:editable="false"
+                    tools:ignore="Deprecated" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tableLayout"
+                android:layout_gravity="start|bottom"
+                android:gravity="bottom|center"
+                android:orientation="horizontal"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp">
+
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab_Call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|bottom"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:src="@android:drawable/stat_sys_phone_call"
+                    android:textAlignment="center"
+                    android:tint="@color/MyFabTint_color"
+                    app:backgroundTint="@color/MyFabBackground_color"
+                    app:fabSize="auto"
+                    app:maxImageSize="35dp" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab_Message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:tint="@color/MyFabTint_color"
+                    app:backgroundTint="@color/MyFabBackground_color"
+                    app:fabSize="normal"
+                    app:maxImageSize="30dp"
+                    app:srcCompat="@android:drawable/ic_dialog_email" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab_whatsapp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:src="@drawable/whatsapp"
+                    android:tint="@color/MyFabTint_color"
+                    app:backgroundTint="@color/MyFabBackground_color"
+                    app:fabSize="normal"
+                    app:maxImageSize="60dp"/>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tableLayout"
+                android:layout_gravity="start|bottom"
+                android:gravity="bottom|center"
+                android:orientation="horizontal"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:src="?attr/actionModeShareDrawable"
+                    android:tint="@color/MyFabTint_color"
+                    app:backgroundTint="@color/MyFabBackground_color"
+                    app:fabSize="normal"
+                    app:maxImageSize="40dp" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab_group_chart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:src="@android:drawable/sym_action_chat"
+                    android:tint="@color/MyFabTint_color"
+                    app:backgroundTint="@color/MyFabBackground_color"
+                    app:fabSize="normal"
+                    app:maxImageSize="40dp" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab_map"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:src="@android:drawable/ic_dialog_map"
+                    android:tint="@color/MyFabTint_color"
+                    app:backgroundTint="@color/MyFabBackground_color"
+                    app:fabSize="normal"
+                    app:maxImageSize="40dp" />
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+</ScrollView>

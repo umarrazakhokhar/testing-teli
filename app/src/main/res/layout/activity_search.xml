@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity"
+    android:orientation="vertical"
+    android:background="@color/Mybackground_color">
+
+
+            <TextView
+                android:id="@+id/signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Advanced Search"
+                android:layout_marginBottom="2dp"
+                android:fontFamily="sans-serif-black"
+                android:textSize="25dp"
+                android:padding="8dp"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/Mybackground_color"
+                android:background="@color/colorPrimary"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/MyTextInputLayoutStyle"
+                        android:theme="@style/MyTextInputLayoutStyle"
+                        app:boxStrokeColor="@color/boxStrokeColor">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/EditText_Name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimary"
+                            android:hint="Name ( नाम )" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/MyTextInputLayoutStyle"
+                        android:theme="@style/MyTextInputLayoutStyle"
+                        app:boxStrokeColor="@color/boxStrokeColor">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/EditText_FatherName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimary"
+                            android:hint="Father Name ( पिता का नाम )" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/MyTextInputLayoutStyle"
+                        android:theme="@style/MyTextInputLayoutStyle"
+                        android:layout_marginTop="0dp"
+                        app:boxStrokeColor="@color/boxStrokeColor">
+
+                        <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                            android:id="@+id/EditText_SurName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:drawableEnd="@android:drawable/arrow_down_float"
+                            android:paddingEnd="20dp"
+                            android:editable="false"
+                            android:hint="Surname ( उपनाम )"
+                            android:textColor="@color/colorPrimary"
+                            android:imeOptions="flagNoExtractUi"
+                            android:includeFontPadding="false"
+                            android:inputType="none"
+                            android:maxLines="1"
+                            android:paddingStart="12dp"
+                            tools:ignore="Deprecated" />
+
+                        <Spinner
+                            android:id="@+id/spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+                            style="@style/MyEditTextStyle"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorPrimary"
+                            android:textAlignment="textStart"
+                            android:entries="@array/teli_arrays"
+                            android:prompt="@string/teli_prompt"
+                            />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/MyTextInputLayoutStyle"
+                        android:theme="@style/MyTextInputLayoutStyle"
+                        android:layout_marginTop="0dp"
+                        app:boxStrokeColor="@color/boxStrokeColor">
+
+                        <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                            android:id="@+id/EditText_City"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:drawableEnd="@android:drawable/arrow_down_float"
+                            android:paddingEnd="20dp"
+                            android:editable="false"
+                            android:hint="City ( शहर )"
+                            android:textColor="@color/colorPrimary"
+                            android:imeOptions="flagNoExtractUi"
+                            android:includeFontPadding="false"
+                            android:inputType="none"
+                            android:maxLines="1"
+                            android:paddingStart="12dp"
+                            tools:ignore="Deprecated" />
+
+                        <Spinner
+                            android:id="@+id/spinner_city"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+                            style="@style/MyEditTextStyle"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="10dp"
+                            android:textStyle="bold"
+                            android:textAlignment="textStart"
+                            android:entries="@array/district" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/MyTextInputLayoutStyle"
+                        android:theme="@style/MyTextInputLayoutStyle"
+                        android:layout_marginTop="0dp"
+                        app:boxStrokeColor="@color/boxStrokeColor">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/EditText_Mobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Mobile No. ( मोबाइल )"
+                            android:textColor="@color/colorPrimary"
+                            android:inputType="number"
+                            tools:ignore="Deprecated"
+                            android:maxLength="12"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <Button
+                        android:id="@+id/btn_Search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Search"
+                        android:textColor="@color/Mybackground_color"
+                        android:textSize="26dp"
+                        android:background="@drawable/button_style"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="2dp"
+                        android:drawableRight="@android:drawable/ic_menu_search"
+                        android:paddingRight="10dp"/>
+                </LinearLayout>
+            </ScrollView>
+
+
+
+    <TextView
+        android:id="@+id/total_contacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No.of record"
+        android:layout_marginTop="0dp"
+        android:textColor="@color/MyListViewDivider_color"
+        android:fontFamily="sans-serif-black"
+        android:textSize="12dp"
+        android:layout_gravity="center"/>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:dividerHeight="1dp"
+        android:divider="@color/MyListViewDivider_color"
+        android:headerDividersEnabled="true"
+        tools:ignore="MissingConstraints"
+        android:paddingRight="2dp"
+        android:paddingLeft="2dp"
+        android:background="@color/MyListViewBackground_color"/>
+
+
+</LinearLayout>
+

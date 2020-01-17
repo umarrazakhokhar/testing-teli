@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "866294746937",
+    "firebase_url": "https://muslim-teli-contact-book-1.firebaseio.com",
+    "project_id": "muslim-teli-contact-book-1",
+    "storage_bucket": "muslim-teli-contact-book-1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:866294746937:android:15ce0f44151cd76a",
+        "android_client_info": {
+          "package_name": "in.blogspot.ayazsofttech.muslim_teli_contact_book"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "866294746937-h2cesvbkfj331n6leidli619l273kgih.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.blogspot.ayazsofttech.muslim_teli_contact_book",
+            "certificate_hash": "9b2e4ea187fdcd4148482bf89d820b37ba2076b4"
+          }
+        },
+        {
+          "client_id": "866294746937-2gkh8qeqcuctblpt9egdef769rfmshlf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxx-RFYZIqR_mW_YDNfs7zqGWRnpMPrNE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "866294746937-2gkh8qeqcuctblpt9egdef769rfmshlf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#356859</color>
+    <color name="colorPrimaryDark">#356859</color>
+    <color name="colorAccent">#433E1C</color>
+
+    <color name="colorbackground">#211c43</color>
+
+
+    <color name="colorAccentSecondary">#ad1a7f</color>
+
+    <color name="ListRow">#ffffff</color>
+    <color name="ListRow_round">#356859</color>
+
+    <color name="boxStrokeColor">#FD5523</color>
+    <color name="TextviewLayoutHint">#FD5523</color>
+
+    <color name="Mybackground_color">#FFFBE6</color>
+    <color name="MyTexthint_color">#FD5523</color>
+
+    <color name="MySpinnerBackground_color">#FFFBE6</color>
+    <color name="MySpinner_color">#FD5523</color>
+
+    <color name="MyButton_color">#FD5523</color>
+
+    <color name="MyListViewBackground_color">#FFFBE6</color>
+    <color name="MyListViewDivider_color">#37966F</color>
+    <color name="MyListViewText_color">#356859</color>
+    <color name="MyListViewTextCircle_color">#ffffff</color>
+
+    <color name="MyFabTint_color">#FFFFFF</color>
+    <color name="MyFabBackground_color">#FD5523</color>
+
+</resources>

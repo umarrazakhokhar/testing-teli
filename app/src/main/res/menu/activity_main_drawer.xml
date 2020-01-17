@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:title="@string/app_name">
+        <item
+            android:id="@+id/nav_edit"
+            android:icon="@android:drawable/ic_menu_edit"
+            android:title="Edit Profile (प्रोफाइल एडिट करें)" />
+        <item
+            android:id="@+id/nav_add_contact"
+            android:icon="@android:drawable/ic_input_add"
+            android:title="Add Another (एक और तेली व्यक्ति जोड़ें)" />
+
+        <item
+            android:id="@+id/nav_search_by_surname"
+            android:icon="@android:drawable/ic_search_category_default"
+            android:title="Search By Surname (उपनाम से खोजें )" />
+
+        <item
+            android:id="@+id/nav_search_by_city"
+            android:icon="@android:drawable/ic_search_category_default"
+            android:title="Search By City (शहर से खोजें)" />
+
+        <item
+            android:id="@+id/nav_advanced_Search"
+            android:icon="@android:drawable/ic_search_category_default"
+            android:title="Advanced Search (उन्नत खोज)" />
+
+
+        <item
+            android:id="@+id/nav_rating"
+            android:icon="@android:drawable/star_off"
+            android:title="Rating (रेटिंग)" />
+
+        <item
+            android:id="@+id/nav_more_app_play_store"
+            android:icon="@drawable/icon_playstore"
+            android:title="Google Play Store (गूगल प्ले स्टोर)" />
+
+        <item
+            android:id="@+id/nav_Privacy_Policy"
+            android:icon="@android:drawable/ic_lock_idle_lock"
+            android:title="Privacy Policy" />
+
+    </group>
+
+    <item android:title="Quran">
+        <menu>
+            <item
+                android:id="@+id/nav_al_quran_ul_karim"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Al Quran ul Karim Online" />
+            <item
+                android:id="@+id/nav_quran"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Quran Online" />
+            <item
+                android:id="@+id/nav_al_quran_hindi"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Al Quran In Hindi Online" />
+            <item
+                android:id="@+id/nav_al_quran_english"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Al Quran In English Online" />
+            <item
+                android:id="@+id/nav_al_quran_audio"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Al Quran In Audio Online" />
+
+        </menu>
+    </item>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/menu_share" />
+            <item
+                android:id="@+id/nav_Contactus"
+                android:icon="@android:drawable/ic_dialog_email"
+                android:title="Developer Contact No." />
+
+            <item
+                android:id="@+id/nav_telegram"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Telegram Channel Link" />
+            <item
+                android:id="@+id/nav_telegram_group"
+                android:icon="@android:drawable/sym_action_chat"
+                android:title="Telegram Group Chat" />
+            <item
+                android:id="@+id/nav_Logout"
+                android:icon="@drawable/common_full_open_on_phone"
+                android:title="Logout ?" />
+        </menu>
+    </item>
+
+</menu>

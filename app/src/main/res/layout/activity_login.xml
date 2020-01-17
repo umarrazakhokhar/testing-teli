@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Version 2.14"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/Mybackground_color"
+        android:fontFamily="sans-serif-black"
+        android:textSize="10dp"
+        android:textAlignment="textEnd"
+        android:layout_centerHorizontal="true"/>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="40dp">
+
+        <TextView
+            android:id="@+id/muslim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Muslim Teli 153"
+            android:padding="1dp"
+            android:textColor="@color/Mybackground_color"
+            android:fontFamily="sans-serif-black"
+            android:textSize="70dp"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:id="@+id/muslim2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="मुस्लिम तेली 153"
+            android:padding="1dp"
+            android:textColor="@color/Mybackground_color"
+            android:fontFamily="sans-serif-black"
+            android:textSize="40dp"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/muslim"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/container_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/textView_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="Enter the mobile number"
+            android:gravity="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+            android:textColor="@color/Mybackground_color"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Tmobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/MyTextInputLayoutStyle_search"
+            android:theme="@style/MyTextInputLayoutStyle_search"
+            app:boxStrokeColor="#FFFBE6"
+            android:textColorHint="#FFFBE6"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/textView_mobile">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editText_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="0dp"
+                android:digits="0123456789"
+                android:drawableRight="@android:drawable/ic_menu_call"
+                android:hint=" मोबाइल नंबर दर्ज करें "
+                android:inputType="phone"
+                android:maxLength="10"
+                android:textColor="#FFFBE6"
+                tools:ignore="Deprecated">
+
+                <requestFocus></requestFocus>
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_continue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send OTP"
+            android:textColor="#fff"
+            android:textSize="26dp"
+            android:background="@drawable/button_style"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/Tmobile"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/container_otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/container_mobile"
+        android:orientation="vertical"
+        android:padding="2dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/textView_otp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Wait for OTP"
+            android:gravity="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+            android:textColor="@color/Mybackground_color"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_otp"
+            android:layout_centerHorizontal="true"
+            android:indeterminateTint="@android:color/holo_orange_dark"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Totp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/MyTextInputLayoutStyle_search"
+            android:theme="@style/MyTextInputLayoutStyle_search"
+            app:boxStrokeColor="#FFFBE6"
+            android:textColorHint="#FFFBE6"
+            android:layout_marginTop="1dp"
+            android:layout_below="@id/progressbar">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editText_otp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="0dp"
+                android:digits="0123456789"
+                android:drawableRight="@android:drawable/ic_lock_lock"
+                android:hint=" OTP की प्रतीक्षा करें "
+                android:inputType="phone"
+                android:maxLength="10"
+                android:textColor="#FFFBE6"
+                tools:ignore="Deprecated">
+
+                <requestFocus></requestFocus>
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textColor="#fff"
+            android:textSize="26dp"
+            android:background="@drawable/button_style"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@id/Totp"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

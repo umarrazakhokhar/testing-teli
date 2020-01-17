@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Mybackground_color"
+    tools:context=".EditProfileActivity"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit Profile"
+        android:fontFamily="sans-serif-black"
+        android:textSize="28dp"
+        android:padding="8dp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/Mybackground_color"
+        android:background="@color/colorPrimary"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="15dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/MyTextInputLayoutStyle"
+                android:theme="@style/MyTextInputLayoutStyle"
+                app:boxStrokeColor="@color/boxStrokeColor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/EditText_Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                    android:maxLength="25"
+                    android:hint="Name ( नाम )" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/MyTextInputLayoutStyle"
+                android:theme="@style/MyTextInputLayoutStyle"
+                app:boxStrokeColor="@color/boxStrokeColor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/EditText_FatherName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                    android:maxLength="25"
+                    android:hint="Father Name ( पिता का नाम )" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/MyTextInputLayoutStyle"
+                android:theme="@style/MyTextInputLayoutStyle"
+                android:layout_marginTop="5dp"
+                app:boxStrokeColor="@color/boxStrokeColor"
+                >
+
+
+                <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                    android:id="@+id/EditText_SurName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:drawableEnd="@android:drawable/arrow_down_float"
+                    android:paddingEnd="20dp"
+                    android:editable="false"
+                    android:hint="Surname ( उपनाम )"
+                    android:imeOptions="flagNoExtractUi"
+                    android:includeFontPadding="false"
+                    android:inputType="none"
+                    android:maxLines="1"
+                    android:paddingStart="12dp"
+                    tools:ignore="Deprecated" />
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+                    style="@style/MyEditTextStyle"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:textAlignment="textStart"
+                    android:entries="@array/teli_arrays"
+                    android:prompt="@string/teli_prompt"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/MyTextInputLayoutStyle"
+                android:theme="@style/MyTextInputLayoutStyle"
+                android:layout_marginTop="3dp"
+                app:boxStrokeColor="@color/boxStrokeColor"
+                >
+
+
+                <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                    android:id="@+id/EditText_Category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:drawableEnd="@android:drawable/arrow_down_float"
+                    android:paddingEnd="20dp"
+                    android:editable="false"
+                    android:hint="Category ( श्रेणी )"
+                    android:imeOptions="flagNoExtractUi"
+                    android:includeFontPadding="false"
+                    android:inputType="none"
+                    android:maxLines="1"
+                    android:paddingStart="12dp"
+                    tools:ignore="Deprecated" />
+
+                <Spinner
+                    android:id="@+id/spinner_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+                    style="@style/MyEditTextStyle"
+                    android:textSize="10dp"
+                    android:textStyle="bold"
+                    android:textAlignment="textStart"
+                    android:entries="@array/teli_Category"
+                    />
+
+
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/MyTextInputLayoutStyle"
+                android:theme="@style/MyTextInputLayoutStyle"
+                android:layout_marginTop="8dp"
+                app:boxStrokeColor="@color/boxStrokeColor">
+
+                <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                    android:id="@+id/EditText_State"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:drawableEnd="@android:drawable/arrow_down_float"
+                    android:paddingEnd="20dp"
+
+                    android:hint="State ( राज्य )"
+                    android:imeOptions="flagNoExtractUi"
+                    android:includeFontPadding="false"
+
+                    android:maxLines="1"
+                    android:paddingStart="12dp"
+                    tools:ignore="Deprecated"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "/>
+
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/MyTextInputLayoutStyle"
+                android:theme="@style/MyTextInputLayoutStyle"
+                android:layout_marginTop="3dp"
+                app:boxStrokeColor="@color/boxStrokeColor">
+
+                <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                    android:id="@+id/EditText_District"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:drawableEnd="@android:drawable/arrow_down_float"
+                    android:paddingEnd="20dp"
+
+                    android:hint="District ( जिला )"
+                    android:imeOptions="flagNoExtractUi"
+                    android:includeFontPadding="false"
+
+                    android:maxLines="1"
+                    android:paddingStart="12dp"
+                    tools:ignore="Deprecated"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/MyTextInputLayoutStyle"
+                android:theme="@style/MyTextInputLayoutStyle"
+                android:layout_marginTop="5dp"
+                app:boxStrokeColor="@color/boxStrokeColor">
+
+                <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                    android:id="@+id/EditText_City"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                    android:maxLength="25"
+                    android:paddingStart="12dp"
+                    android:hint="City ( शहर )"
+                    android:drawableEnd="@android:drawable/arrow_down_float"
+                    android:paddingEnd="20dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/MyTextInputLayoutStyle"
+                android:theme="@style/MyTextInputLayoutStyle"
+                android:layout_marginTop="5dp"
+                app:boxStrokeColor="@color/boxStrokeColor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/EditText_Mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Mobile No. ( मोबाइल )"
+                    android:inputType="none"
+                    android:editable="false"
+                    android:maxLength="10"
+                    tools:ignore="Deprecated" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/MyTextInputLayoutStyle"
+                android:theme="@style/MyTextInputLayoutStyle"
+                android:layout_marginTop="5dp"
+                app:boxStrokeColor="@color/boxStrokeColor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/EditText_HomeTown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                    android:maxLength="50"
+                    android:hint="Original Place मूल स्थान ( कहां वाले )"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="save"
+                android:textColor="@color/Mybackground_color"
+                android:textSize="26dp"
+                android:background="@drawable/button_style"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>
